@@ -1,6 +1,7 @@
 .cardContainer {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
     row-gap: 1rem;
     padding-bottom: 5rem;
 }
@@ -90,4 +91,16 @@
 .btn:is(:hover, :focus) {
     background-color: var(--purple-500);
     transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 48rem) {
+    .cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 64rem) {
+    .cardContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

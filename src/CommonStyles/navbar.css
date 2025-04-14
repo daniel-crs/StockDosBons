@@ -98,6 +98,12 @@
 
 @media (min-width: 48em) {
     .header {
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 64rem) {
+    .header {
         padding: 0 100px;
     }
     .header li {
@@ -113,5 +119,29 @@
     }
     .header .menu-icon {
         display: none;
+    }
+}
+
+@media (min-width: 80rem) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 90rem) {
+    .container {
+        width: 75%;
+    }
+}
+
+@media (min-width: 105rem) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media (min-width: 120rem) {
+    .container {
+        width: 60%;
     }
 }

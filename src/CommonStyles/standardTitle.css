@@ -7,7 +7,7 @@
     font-weight: 600;
 }
 .underBar {
-    width: 80%;
+    width: 15rem;
     height: 6px;
     border-radius: 8px;
     background-color: var(--pink-400);
