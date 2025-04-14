@@ -97,6 +97,9 @@
 }
 
 @media (min-width: 48em) {
+    .header {
+        padding: 0 100px;
+    }
     .header li {
         float: left;
     }
@@ -109,6 +112,6 @@
         max-height: none;
     }
     .header .menu-icon {
-    
+        display: none;
     }
 }

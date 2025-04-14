@@ -1,0 +1,15 @@
+.title {
+    padding: 5rem 0 1.5rem 0;
+}
+.title h2 {
+    font-size: 1.6rem;
+    color: #323232;
+    font-weight: 600;
+}
+.underBar {
+    width: 80%;
+    height: 6px;
+    border-radius: 8px;
+    background-color: var(--pink-400);
+    margin-top: 5px;
+}
