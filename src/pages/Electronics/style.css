@@ -1,0 +1,60 @@
+.title {
+    padding: 5rem 0 1.5rem 0;
+}
+.title h2 {
+    font-size: 1.6rem;
+    color: var(--darkPurple);
+    font-weight: 600;
+}
+.cardContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
+.card {
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid #e4e4e4;
+    box-shadow: 10px 10px 5px #888888;
+    cursor: pointer;
+}
+.card:is(:hover, :focus) {
+    box-shadow: 10px 10px 15px #888888;
+    scale: 1.05;
+    transition: all 0.3s ease-in-out;
+}
+.card img {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    height: 350px;
+}
+.cardContent {
+    padding: 16px;
+    margin: 10px 0;
+}
+.cardContent h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.cardContent p {
+    font-size: 1rem;
+    margin: 16px 0;
+}
+.btnPosition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    background-color: var(--darkPurple-500); 
+    border: none;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn:is(:hover, :focus) {
+    background-color: var(--purple-200);
+    transition: all 0.3s ease-in-out;
+}
