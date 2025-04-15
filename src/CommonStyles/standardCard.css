@@ -1,0 +1,115 @@
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    row-gap: 1rem;
+    padding-bottom: 5rem;
+}
+.card {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px #888888;
+    cursor: pointer;
+}
+.card:is(:hover, :focus) {
+    box-shadow: 10px 10px 15px #888888;
+    scale: 1.05;
+    transition: all 0.3s ease-in-out;
+}
+.imgElement {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    width: 100%;
+    height: 200px;
+}
+.imgElement img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+.tag {
+    position: absolute;
+    margin: 15px 15px;
+    background-color: var(--pink-400);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    padding: 5px 12.5px;
+    color: var(--purple-500);
+}
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 1.2rem;
+    border-radius: 8px;
+}
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.textContainer h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+.textContainer p {
+    width: 90%;
+    font-size: 1rem;
+    color: #262626;
+    text-align: center;
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 2; 
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.btn {
+    background-color: var(--pink-400); 
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn:is(:hover, :focus) {
+    background-color: var(--purple-500);
+    transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 23rem) {
+    .content p {
+        font-size: 1.4rem;
+    }
+    .btn {
+        padding: 10px 35px;
+    }
+}
+
+@media (min-width: 48rem) {
+    .cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 64rem) {
+    .cardContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
