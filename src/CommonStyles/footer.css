@@ -1,5 +1,5 @@
 footer {
-    background-color: var(--pink-400);
+    background-color: var(--background);
     padding: 2rem 0;
   }
   #content {
@@ -36,7 +36,7 @@ footer {
     font-weight: 500;
   }
   .links a:is(:hover, :focus) {
-    color: var(--purple-500);
+    color: var(--complement);
     scale: 1.1;
     transition: all 0.3s ease-in-out;
   }
@@ -54,7 +54,7 @@ footer {
     font-weight: 500;
   }
   .redesSociais a:is(:hover, :focus) {
-    color: var(--purple-500);
+    color: var(--complement);
     scale: 1.1;
     transition: all 0.3s ease-in-out;
   }

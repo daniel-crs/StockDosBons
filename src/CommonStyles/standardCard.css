@@ -34,11 +34,11 @@
 .tag {
     position: absolute;
     margin: 15px 15px;
-    background-color: var(--pink-400);
+    background-color: var(--background);
     border-radius: 8px;
     font-size: 0.9rem;
     padding: 5px 12.5px;
-    color: var(--purple-500);
+    color: #fff;
 }
 .cardContent {
     display: flex;
@@ -80,7 +80,7 @@
     font-weight: 600;
 }
 .btn {
-    background-color: var(--pink-400); 
+    background-color: var(--background); 
     border: none;
     font-size: 1rem;
     color: #fff;
@@ -89,7 +89,7 @@
     cursor: pointer;
 }
 .btn:is(:hover, :focus) {
-    background-color: var(--purple-500);
+    background-color: var(--complement);
     transition: all 0.3s ease-in-out;
 }
 

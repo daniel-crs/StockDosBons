@@ -6,9 +6,8 @@
 }
 
 :root {
-    --pink-200: #FCC0FE;
-    --pink-400: #E17FB2;
-    --purple-500: #7138FF;
+    --background: #0f09c3;
+    --complement: #50c6ed;
 }
 
 .container {
