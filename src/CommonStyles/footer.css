@@ -24,6 +24,7 @@ footer {
   .links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     width: 95%;
     margin: 1rem auto;
     gap: 1rem;
