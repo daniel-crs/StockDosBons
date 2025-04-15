@@ -76,7 +76,7 @@
     align-items: center;
 }
 .content p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 .btn {
@@ -84,13 +84,22 @@
     border: none;
     font-size: 1rem;
     color: #fff;
-    padding: 10px 35px;
+    padding: 10px 25px;
     border-radius: 8px;
     cursor: pointer;
 }
 .btn:is(:hover, :focus) {
     background-color: var(--purple-500);
     transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 23rem) {
+    .content p {
+        font-size: 1.4rem;
+    }
+    .btn {
+        padding: 10px 35px;
+    }
 }
 
 @media (min-width: 48rem) {
